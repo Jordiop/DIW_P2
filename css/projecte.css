@@ -6,12 +6,16 @@ header {
 }
 
 nav {
-    float: left;
+    float: top;
+    display: flex;
 }
 
 nav ul {
     list-style: none;
     overflow: hidden;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
 
 nav ul li {
@@ -21,7 +25,7 @@ nav ul li {
 }
 
 nav ul li a {
-    display: block;
+    display: inline-block;
     padding: 10px;
     color: #fff;
     text-decoration: none;
