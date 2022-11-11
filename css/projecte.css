@@ -1,21 +1,35 @@
 header {
     background: rgba(136, 134, 17, 0.7);
     width: 100%;
-    position: fixed;
-    z-index: 100;
+    position: block;
+    z-index: 99;
+    padding: 10px 1;
 }
 
 nav {
     float: top;
-    display: flex;
+    margin-top: 0;
 }
 
 nav ul {
     list-style: none;
     overflow: hidden;
     align-items: center;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.left-header {
+    text: left;
+}
+
+.center-header {
+    align-items: center;
+    justify-content: center;
+}
+
+.right-header {
+    text-align: right;
 }
 
 nav ul li {
