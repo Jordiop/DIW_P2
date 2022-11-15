@@ -36,9 +36,24 @@ nav ul li {
     font-size: 16px;
 }
 
-nav li:hover {
+.links a:hover {
     background: #ca8910;
     border-radius: 15px;
+}
+
+.links a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+.links a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.links a:active {
+    color: #000;
+    text-decoration: none;
 }
 
 .container {
