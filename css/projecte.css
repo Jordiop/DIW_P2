@@ -4,12 +4,11 @@ header {
     position: sticky;
 }
 
-nav {
-    float: top;
-    margin-top: 0;
+* {
+    border-radius: 15px;
 }
 
-nav ul {
+.container header ul {
     list-style: none;
     overflow: hidden;
     display: grid;
@@ -46,4 +45,32 @@ nav ul li a {
 
 nav ul li:hover {
     background: #ca8910;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 2fr 8fr;
+    grid-template-areas: "header header" "nav main" "footer footer";
+    grid-gap: .75em;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(137, 146, 56);
+}
+
+nav {
+    grid-area: nav;
+    background-color: tomato;
+}
+
+main {
+    grid-area: main;
+    background-color: lightblue;
+}
+
+footer {
+    grid-area: footer;
+    background-color: lightgreen;
 }
