@@ -4,10 +4,6 @@ header {
     position: sticky;
 }
 
-* {
-    border-radius: 15px;
-}
-
 .container header ul {
     list-style: none;
     overflow: hidden;
@@ -15,6 +11,7 @@ header {
     align-items: center;
     justify-content: center;
     grid-template-columns: 50% 50%;
+    border-bottom: black solid 2px;
 }
 
 .left-header {
@@ -58,7 +55,7 @@ nav ul li {
 
 .container {
     display: grid;
-    grid-template-rows: 10% 5fr 1fr;
+    grid-template-rows: 20% 70% 10%;
     grid-template-columns: 1fr 9fr;
     grid-template-areas: "header header" "nav main" "footer footer";
     grid-gap: .75em;
@@ -88,27 +85,4 @@ nav div li {
 main {
     grid-area: main;
     background-color: lightblue;
-}
-
-footer {
-    grid-area: footer;
-    background-color: lightgreen;
-    display: grid;
-    grid-row: 1fr 1fr;
-    grid-template-areas: "div dov";
-}
-
-.foot {
-    grid-area: dov;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.underfoot {
-    grid-area: div;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
