@@ -23,7 +23,7 @@ header {
 .right-header {
     text-align: right;
     justify-content: right;
-    margin-left: auto;
+    margin-left: 10px;
     margin-right: 10px;
 }
 
@@ -85,4 +85,17 @@ nav div li {
 main {
     grid-area: main;
     background-color: lightblue;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "div dov";
+}
+
+.div1 {
+    grid-area: div;
+    background-color: rgb(171, 179, 104);
+}
+
+.div2 {
+    grid-area: dov;
+    background-color: rgb(171, 179, 104);
 }
