@@ -55,9 +55,9 @@ nav ul li {
 
 .container {
     display: grid;
-    grid-template-rows: 20% 70% 10%;
+    grid-template-rows: 20% 50% 20% 10%;
     grid-template-columns: 1fr 9fr;
-    grid-template-areas: "header header" "nav main" "footer footer";
+    grid-template-areas: "header header" "nav main" "section section" "footer footer";
     grid-gap: .75em;
 }
 
@@ -98,4 +98,27 @@ main {
 .div2 {
     grid-area: dov;
     background-color: rgb(171, 179, 104);
+}
+
+section {
+    grid-area: section;
+    background-color: rgb(255, 0, 0);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: "div4 div5 div6";
+}
+
+.div4 {
+    grid-area: div4;
+    background-color: rgb(247, 0, 255);
+}
+
+.div5 {
+    grid-area: div5;
+    background-color: rgb(0, 255, 21);
+}
+
+.div6 {
+    grid-area: div6;
+    background-color: rgb(0, 217, 255);
 }
