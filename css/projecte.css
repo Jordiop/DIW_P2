@@ -58,7 +58,7 @@ nav ul li {
     grid-template-rows: 20% 50% 20% 10%;
     grid-template-columns: 1fr 9fr;
     grid-template-areas: "header header" "nav main" "section section" "footer footer";
-    grid-gap: .75em;
+    grid-gap: 0.75em;
 }
 
 header {
@@ -113,6 +113,11 @@ section {
     background-color: rgb(247, 0, 255);
 }
 
+.div4 :hover {
+    transform: translateY(-10px);
+    background-color: gold;
+}
+
 .div5 {
     grid-area: div5;
     background-color: rgb(0, 255, 21);
@@ -122,6 +127,9 @@ section {
     grid-area: div6;
     background-color: rgb(0, 217, 255);
 }
+
+
+/* Boton */
 
 #btnScrollToTop {
     position: absolute;
@@ -139,4 +147,43 @@ section {
 
 #btnScrollToTop:active {
     background-color: #555;
+}
+
+
+/* Targetes del projecte */
+
+.project {
+    display: grid;
+    grid-template-rows: 10% 40% 40% 10%;
+    border-radius: 10px;
+    border: black solid 1px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.project h3 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#progressbar {
+    background-color: black;
+    border-radius: 13px;
+    /* (height of inner div) / 2 + padding */
+    padding: 3px;
+}
+
+#progressbar>div {
+    background-color: orange;
+    width: 40%;
+    /* Adjust with JavaScript */
+    height: 20px;
+    border-radius: 10px;
 }
