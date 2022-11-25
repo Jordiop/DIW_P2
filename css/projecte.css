@@ -1,36 +1,3 @@
-/* Header */
-
-header {
-    background: rgba(187, 185, 101, 0.644);
-    width: 100%;
-    position: sticky;
-    grid-area: header;
-}
-
-.container header ul {
-    list-style: none;
-    overflow: hidden;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 50% 50%;
-    border-bottom: black solid 2px;
-}
-
-.left-header {
-    align-items: left;
-    justify-content: left;
-    margin-left: 0;
-}
-
-.right-header {
-    text-align: right;
-    justify-content: right;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-
 /* Links */
 
 .links a:hover {
@@ -86,9 +53,9 @@ nav div li {
 
 .container {
     display: grid;
-    grid-template-rows: 20% 50% 20% 10%;
+    grid-template-rows: 20% 40% 15% 15% 10%;
     grid-template-columns: 1fr 9fr;
-    grid-template-areas: "header header" "nav main" "section section" "footer footer";
+    grid-template-areas: "header header" "nav main" "section section" "saction saction" "footer footer";
     grid-gap: 0.75em;
 }
 
@@ -102,20 +69,24 @@ main {
 
 .div1 {
     grid-area: div;
-    background-color: rgb(171, 179, 104);
+    background-color: rgb(255, 255, 255);
 }
 
 .div2 {
     grid-area: dov;
-    background-color: rgb(171, 179, 104);
+    background-color: rgb(255, 255, 255);
 }
 
 section {
     grid-area: section;
-    background-color: rgb(255, 0, 0);
     display: grid;
+    width: fit-content;
     grid-template-columns: 33% 33% 33%;
     grid-template-areas: "div4 div5 div6";
+}
+
+.saction {
+    grid-area: saction;
 }
 
 .div4 {
@@ -142,7 +113,7 @@ section {
 /* Boton "toTop" */
 
 #btnScrollToTop {
-    position: absolute;
+    position: fixed;
     bottom: 10px;
     right: 10px;
     width: 50px;
