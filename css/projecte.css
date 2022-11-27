@@ -25,13 +25,14 @@
 
 nav {
     grid-area: nav;
-    background-color: tomato;
+    background-color: rgba(211, 214, 192, 0.479);
     justify-content: left;
     text-align: left;
     text-decoration: none;
     border-radius: 10px;
     border: black solid 1px;
     margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 nav ul li {
@@ -61,20 +62,60 @@ nav div li {
 
 main {
     grid-area: main;
-    background-color: lightblue;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "div dov";
 }
 
 .div1 {
     grid-area: div;
-    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-areas: "imagen texto";
+    grid-template-columns: 50% 50%;
+    grid-gap: 0.75em;
+    border-radius: 10px;
+    border: black solid 1px;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(211, 214, 192, 0.479);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.div2 {
-    grid-area: dov;
-    background-color: rgb(255, 255, 255);
+.inicio {
+    grid-area: imagen;
+    margin: 10px;
+}
+
+.inicio img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.inicio_texto {
+    grid-area: texto;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 10px;
+    max-width: 100%;
+}
+
+.inicio_texto a {
+    color: red;
+}
+
+.recom1 {
+    border: rgba(187, 185, 101, 0.644) solid 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "imagen texto";
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.recom1:hover {
+    background: rgba(187, 185, 101, 0.644);
+    border-radius: 15px;
+    transform: translateY(-10px);
 }
 
 section {
@@ -122,8 +163,6 @@ section {
     background: red;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     color: white;
-    outline: none;
-    cursor: pointer;
 }
 
 #btnScrollToTop:active {
@@ -140,7 +179,6 @@ section {
     border: black solid 1px;
     margin: 20px;
     padding: 10px;
-    max-height: fit-content;
 }
 
 .project img {
@@ -163,6 +201,7 @@ section {
 /* Barra progress */
 
 #progressbar {
+    margin: 20px;
     background-color: black;
     border-radius: 13px;
     /* (height of inner div) / 2 + padding */
@@ -170,9 +209,10 @@ section {
 }
 
 #progressbar>div {
-    background-color: orange;
+    background-color: rgb(171, 187, 24);
     width: 40%;
     /* Adjust with JavaScript */
+    text-align: center;
     height: 20px;
     border-radius: 10px;
 }
