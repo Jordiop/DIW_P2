@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pay2WIN: Homepage</title>
-    <link rel="stylesheet" href="../css/projecte.css">
+    <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="shortcut icon" href="../images/p.png" />
@@ -19,7 +19,7 @@
             //Load the HTML contents of the header into <header>
             $('header').load('../src/header.html');
             $('footer').load('../src/footer.html');
-            window.onload = god(); //Crida a la funció god() per a que es mostri el progress bar randomitzat
+            window.onload = generate();
         })
     </script>
 </head>
@@ -39,7 +39,7 @@
                     <input type="search" name="busquedamusica" placeholder="Buscar">
                 </li>
                 <li class="links">
-                    <a href="/home">
+                    <a href="../src/ProjecteSample.html">
                         <h2>Categories</h2>
                     </a>
                 </li>
@@ -120,7 +120,7 @@
                     <img src="../images/farm.png" alt="project" height="300px">
                     <a>Self-made classic farm dessign.</a>
                     <div id="progressbar">
-                        <div id="subprogress"></div>
+                        <div id="subprogress" class="prg1"></div>
                     </div>
                 </div>
             </div>
@@ -130,7 +130,7 @@
                     <img src="../images/vinilos.avif" alt="project" height="300px">
                     <a>Just good vibes!</a>
                     <div id="progressbar">
-                        <div id="subprogress"></div>
+                        <div id="subprogress" class="prg2"></div>
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@
                     <img src="../images/project10.gif" alt="project" height="300px">
                     <a>Nautically inspired tools, built to last.</a>
                     <div id="progressbar">
-                        <div id="subprogress"></div>
+                        <div id="subprogress" class="prg3"></div>
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@
                     <img src="../images/project5.jpg" alt="project" height="300px">
                     <a>Confaffordable.</a>
                     <div id="progressbar">
-                        <div id="subprogress"></div>
+                        <div id="subprogress" class="prg4"></div>
                     </div>
                 </div>
             </div>
@@ -162,7 +162,7 @@
                     <img src="../images/project8.gif" alt="project" height="300px">
                     <a>98% Layout | Full-size | Aluminum Body | Standard & Slim Low-Profile | Hot-Swappable | Backlit RGB | Wireless & Wired | For Mac & PC</a>
                     <div id="progressbar">
-                        <div id="subprogress"></div>
+                        <div id="subprogress" class="prg5"></div>
                     </div>
                 </div>
             </div>
@@ -172,7 +172,7 @@
                     <img src="../images/project9.gif" alt="project" height="300px">
                     <a>The ultimate purist's knife. Custom carbon steel blend, hand forged and hand sharpened. A solid knife to last generations.</a>
                     <div id="progressbar">
-                        <div id="subprogress"></div>
+                        <div id="subprogress" class="prg6"></div>
                     </div>
                 </div>
             </div>
@@ -182,7 +182,7 @@
                     <img src="../images/project.jpg" alt="project" height="300px">
                     <a>Hola</a>
                     <div id="progressbar">
-                        <div id="subprogress"></div>
+                        <div id="subprogress" class="prg7"></div>
                     </div>
                 </div>
             </div>
@@ -192,7 +192,6 @@
         <!--Footer-->
         <footer class="footer"></footer>
     </div>
-
 </body>
 
 </html>
