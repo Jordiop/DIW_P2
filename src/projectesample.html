@@ -8,8 +8,8 @@
     <title>ProjecteSample</title>
     <meta charset="UTF-8">
     <!--Elements externs-->
-    <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/projecte.css">
+    <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="shortcut icon" href="../images/p.png" />
@@ -28,8 +28,11 @@
 </head>
 
 <body>
-    <header></header>
+    <button id="btnScrollToTop" onclick="toTop()"> 
+        <i class="material-icons">arrow_upward</i>
+    </button>
     <div class="projectContainer">
+        <header></header>
         <div class="projectTitle">
             <h1>Projecte Sample</h1>
         </div>
@@ -37,16 +40,32 @@
             <img src="../images/projecteSample.png" alt="Projecte Sample">
         </div>
         <div class="projectDescription">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            <div>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."ç</p>
+                <img src="../images/projecteSample.png" alt="Projecte Sample" width="90%">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."ç</p>
+            </div>
         </div>
         <div class="projectProgress" id="projectProgress">
+            <div class="autor">
+                <img src="../images/jordi.jpeg" alt="Jordi">
+                <br>
+                <b>Jordi Osarenkhoe Petro & Biel Tomas Vidal</b>
+                <p>I'm student at Borja Moll. Currently at 2nd course. This is our first project for DIW subject.</p>
+                <br>
+            </div>
             <b>Next milestone: 50000€</b>
             <div id="progressbar">
                 <div id="subprogress" class="prg8"></div>
             </div>
         </div>
-        <footer class="footer"></footer>
+    </div>
+    <footer class="footer"></footer>
+
 </body>
 
 </html>

@@ -1,13 +1,13 @@
 /* Header */
 
 header {
+    grid-area: header;
     background: #24292f;
     width: 100%;
     position: sticky;
-    grid-area: header;
 }
 
-.container header ul {
+header ul {
     list-style: none;
     overflow: hidden;
     display: grid;
