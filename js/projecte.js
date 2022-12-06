@@ -1,3 +1,7 @@
+/* 
+    Simplement, el botó toTop() és un botó que fa scroll a la part superior de la pàgina.
+*/
+
 function toTop() {
     const btnScrollToTop = document.querySelector("#btnScrollToTop");
     btnScrollToTop.addEventListener("click", function() {
@@ -9,6 +13,11 @@ function toTop() {
     });
 
 }
+
+/* 
+    Funció creada per randomitzar les barres de progrés dels projectes. Genera una array de números aleatoris entre 0 i 100 i els assigna a les barres de progrés. 
+    En el cas de la darrera, inclús calcula els doblers en base al percentatge aleatori generat.
+*/
 
 function god2(word) {
     let array = [];
@@ -53,6 +62,10 @@ function god2(word) {
 
 }
 
+/* 
+    Executa la funció de aleatorització de les barres de progrés al carregar la pàgina.
+*/
+
 function generate() {
     god2('prg1');
     god2('prg2');
@@ -67,7 +80,11 @@ function generateProject() {
     god2('prg8');
 }
 
-// Cookies
+/* 
+    Cookies: quan carregam la pàgina, al poc temps, surt l'avís a la part inferior de la pàgina. Si l'usuari accepta, desapareix l'avís.
+
+*/
+
 
 $(document).ready(function() {
     setTimeout(function() {
