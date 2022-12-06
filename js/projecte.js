@@ -48,7 +48,7 @@ function god2(word) {
         let numero = array[7].replace("%", "");
         numero = parseInt(numero);
         numero = (numero / 100) * 50000;
-        document.getElementById('projectProgress').innerHTML += "Right now is up to" + " " + numero + "€";
+        document.getElementById('donar').innerHTML += "Right now is up to" + " " + numero + "€";
     }
 
 }
@@ -66,3 +66,14 @@ function generate() {
 function generateProject() {
     god2('prg8');
 }
+
+// Cookies
+
+$(document).ready(function() {
+    setTimeout(function() {
+        $("#cookieConsent").fadeIn(200);
+    }, 4000);
+    $("#closeCookieConsent, .cookieConsentOK").click(function() {
+        $("#cookieConsent").fadeOut(200);
+    });
+});
