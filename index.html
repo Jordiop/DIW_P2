@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="shortcut icon" href="../images/p.png" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!--Carregar els moduls de header i footer-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -21,7 +22,14 @@
             $('header').load('../src/header.html');
             $('footer').load('../src/footer.html');
             window.onload = generate();
-
+            $(document).ready(function() {
+                setTimeout(function() {
+                    $("#cookieConsent").fadeIn(200);
+                }, 4000);
+                $("#closeCookieConsent, .cookieConsentOK").click(function() {
+                    $("#cookieConsent").fadeOut(200);
+                });
+            });
         });
     </script>
 </head>

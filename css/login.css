@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap%22");
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    height: 100vh;
+}
+
+.page-half {
+    height: 100vh;
+    justify-content: center;
+}
+
+#left {
+    background: url(../images/stockcopia2.png);
+    background-repeat: no-repeat;
+    margin-top: 10%;
+}
+
+#right {
+    display: grid;
+    grid-template-rows: 60% 33% 7%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-form {
+    width: 140%;
+}
+
+.login-form p {
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.login-form label {
+    display: inline-block;
+    color: #444;
+}
+
+.login-form input {
+    display: grid;
+    height: 40px;
+    width: 50%;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login-form div {
+    margin: 20px 0;
+}
+
+.login-form .forgot-password {
+    float: right;
+    width: 74%;
+}
+
+.login-form .forgot-password a {
+    color: #111;
+    text-decoration: none;
+}
+
+.login-form .register {
+    float: left;
+}
+
+.login-form .register a {
+    color: #111;
+    text-decoration: none;
+}
+
+.login-form button {
+    height: 50px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #05124e;
+    background-color: #05124e;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 25px;
+}
+
+.login-form button:hover {
+    opacity: 0.9;
+    color: #fff;
+}
+
+.footercustom {
+    width: fit-content;
+}
+
+@media only screen and (max-width: 600px) {
+    #left {
+        display: none;
+    }
+    .login-form {
+        width: 100%;
+    }
+    .footercustom {
+        width: fit-content;
+    }
+    #right {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #firstname {
+        width: 100%;
+    }
+    #lastname {
+        width: 100%;
+    }
+    #email {
+        width: 100%;
+    }
+    #password {
+        width: 100%;
+    }
+    #submit {
+        width: 100%;
+    }
+    .forgot-password {
+        padding-left: 70px;
+    }
+    .register {
+        text-align: center;
+        width: 100%;
+    }
+}

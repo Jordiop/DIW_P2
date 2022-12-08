@@ -79,18 +79,3 @@ function generate() {
 function generateProject() {
     god2('prg8');
 }
-
-/* 
-    Cookies: quan carregam la pàgina, al poc temps, surt l'avís a la part inferior de la pàgina. Si l'usuari accepta, desapareix l'avís.
-
-*/
-
-
-$(document).ready(function() {
-    setTimeout(function() {
-        $("#cookieConsent").fadeIn(200);
-    }, 4000);
-    $("#closeCookieConsent, .cookieConsentOK").click(function() {
-        $("#cookieConsent").fadeOut(200);
-    });
-});

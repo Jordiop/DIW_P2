@@ -17,6 +17,13 @@
         background: #24292f;
         width: 100%;
         position: sticky;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+    
+    .header_mobile {
+        display: none;
+        visibility: hidden;
     }
     
     header ul {
@@ -31,8 +38,8 @@
     }
     
     .left-header {
-        align-items: left;
-        justify-content: left;
+        align-items: center;
+        justify-content: center;
         margin-right: auto;
     }
     
@@ -49,10 +56,6 @@
     /* Media query (600px) */
     
     @media screen and (max-width: 600px) {
-        .menus {
-            display: block;
-            visibility: visible;
-        }
         header {
             position: sticky;
             top: 0;
@@ -67,12 +70,13 @@
             grid-template-areas: "burger logo access";
         }
         .menus {
+            display: block;
+            visibility: visible;
             grid-area: burger;
             font-size: 20px;
             cursor: pointer;
             max-width: fit-content;
             padding: 10px;
-            color: white;
         }
         .left-header {
             grid-area: logo;
@@ -114,7 +118,6 @@
         }
         .menu__btn {
             position: fixed;
-            top: 20px;
             left: 20px;
             width: 26px;
             height: 26px;
@@ -173,5 +176,18 @@
             color: #333;
             margin-bottom: 30px;
             margin-left: 20px;
+        }
+        .header_img {
+            display: none;
+        }
+        .header_mobile {
+            display: block;
+            visibility: visible;
+            width: 100%;
+            text-align: center;
+        }
+        .left-header {
+            margin-left: auto;
+            margin-bottom: 5px;
         }
     }

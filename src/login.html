@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Log In</title>
+    <link rel="stylesheet" href="../css/login.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script>
+        $(document).ready(() => {
+            //Load the HTML contents of the header into <header>
+            $('header').load('header.html');
+            $('footer').load('footer.html');
+        })
+    </script>
+</head>
+
+<body>
+    <header></header>
+    <div class="container">
+        <div id="left" class="page-half">
+        </div>
+        <div id="right" class="page-half">
+            <div class="login-form">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Welcome!</h2>
+                <p>Sign in</p>
+
+                <form>
+                    <div>
+                        <label>Email</label>
+                        <input type="text" name="email" id="email" autofocus required />
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <label class="forgot-password"><a href="#">Forgot your password?</a></label>
+                        <input type="password" name="password" id="password" required />
+                    </div>
+                    <div>
+                        <button name="submit" id="submit">Login</button>
+                    </div>
+                    <br>
+                    <label class="register"><a href="../src/register.html">Not registered yet? Register now!</a></label>
+                </form>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="footercustom">
+                    <footer class="footer">
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
