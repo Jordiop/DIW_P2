@@ -70,6 +70,7 @@
             grid-template-areas: "burger logo access";
         }
         .menus {
+            margin-top: 10px;
             display: block;
             visibility: visible;
             grid-area: burger;
