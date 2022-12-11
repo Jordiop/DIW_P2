@@ -8,6 +8,9 @@
 
 - La paleta de colors elegida inicialment no era gaire atractiva per ningú. Així doncs, hem elegit colors molt més agradables a la vista.
 
+![image](https://user-images.githubusercontent.com/91564872/206921197-0b3dab49-7073-47b9-9dcd-31cd4bffa2cf.png)
+
+
 ## Fonts
 
 ## Què ha canviat respecte al Wireframe?
