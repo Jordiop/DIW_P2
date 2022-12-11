@@ -139,9 +139,10 @@ section {
     width: 50px;
     height: 50px;
     border-radius: 20%;
-    background: red;
+    background: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    color: white;
+    color: rgb(20, 23, 112);
+    border: black;
 }
 
 #btnScrollToTop:active {
@@ -201,7 +202,7 @@ section {
     background-color: rgb(68, 47, 161);
     /* Adjust with JavaScript */
     text-align: center;
-    height: 20px;
+    height: 15px;
     border-radius: 10px;
     color: white;
 }

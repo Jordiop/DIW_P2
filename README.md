@@ -40,6 +40,10 @@
 
 - La pàgina de projecte també ha canviat, ja que el wireframe es feia entendre que l'autor era més important que el projecte en si. Ara, el projecte és el protagonista i l'autor apareix a la part dreta de la pàgina, pero a la part inferior de la imatge princial del projecte.
 
+#### Video
+
+- Link del video: https://youtu.be/aQYQURNFT3g
+
 
 
 
